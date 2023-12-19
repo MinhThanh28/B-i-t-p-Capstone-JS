@@ -1,5 +1,5 @@
-
-    Thiết lập một quy trình làm việc rõ ràng:
+link bảng phân chia công việc: https://docs.google.com/spreadsheets/d/1LQtEk-GKtyvTILfRYxQcFW5ILMY0Z_5U/edit?usp=sharing&ouid=116071402152667864613&rtpof=true&sd=true
+    Quy trình làm việc rõ ràng:
         Định nghĩa cách sử dụng các nhánh (branches), ví dụ như main cho sản phẩm đã hoàn thiện, develop cho bản phát triển, và các nhánh tính năng (feature branches) cho từng công việc cụ thể.
         Quy định cách đặt tên nhánh, commit messages, và pull requests để dễ dàng theo dõi và quản lý.
     Sử dụng nhánh (branching) và pull requests:
