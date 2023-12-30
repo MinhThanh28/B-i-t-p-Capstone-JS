@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+
+}
+.tb {
+
+    border: 1px solid blue;
+    width: 90%;
+    
+    border-radius: 10%;
+    font-size: 15px;
+
+}
+.tbcenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+.headtb {
+    background-color: rgba(72, 9, 245, 0.753);
+}
+.headtb h4 {
+    color: white;
+    font-size: 30px;
+    padding-left: 5px;
+}
+.cpntb1 th {
+    //margin: 10px;
+    //width: 100%;
+    padding: 10px;
+    text-align: center;
+    //padding-left-right: 20px;
+}
