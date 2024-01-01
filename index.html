@@ -37,10 +37,6 @@
 </head>
 
 <body>
-  <link rel="stylesheet" href="./assets/css/main.css">
-  </head>
-
-  <body>
     <!--Header-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-5">
@@ -157,9 +153,9 @@
     <div class="meh container-modal add-modal">
       <div class="cart is-hidden modal add-book-modal">
         <input type="hidden" id="act" name="act" value="new" />
-        <div class="cart_overlay"></div>
-        <div class="cart_contents">
-          <div class="cart_products">
+        <div class="cart__overlay"></div>
+        <div class="cart__contents">
+          <div class="cart__products">
             <h2>Shopping Cart</h2>
             <p class="microcopy">An overview of your selected products.</p>
             <div class="products" id="cartList"></div>
@@ -207,7 +203,11 @@
         </div>
       </div>
     </div>
+
     <!-- Footer -->
+    
+    
+
     <footer class="text-center text-lg-start bg-dark text-light gradient-custom">
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center p-4 border-bottom">
@@ -379,7 +379,7 @@
 
     <!--MainJS-->
     <script src="./assets/js/main.js"></script>
-
+    <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/buttons.js"></script>
 
 
