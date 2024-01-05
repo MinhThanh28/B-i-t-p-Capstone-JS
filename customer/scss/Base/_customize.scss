@@ -1,0 +1,81 @@
+.form {
+    position: relative;
+  }
+  
+  .form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  
+  .red-btn {
+    background-color: #df461f;
+  }
+  
+  .red-btn:hover {
+    background-color: #e96443;
+  }
+  
+  .yellow-btn {
+    background-color: #f0b80f;
+  }
+  
+  .yellow-btn:hover {
+    background-color: #f1ca55;
+  }
+  
+  .microcopy {
+    display: block;
+    color: #9da3af;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  a {
+    color: #e2007a;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  .align-right {
+    text-align: right;
+  }
+  
+  .align-left {
+    text-align: left;
+  }
+  
+  small {
+    font-size: 14px;
+    color: #9da3af;
+  }
+  
+  .tertiary {
+    color: #9da3af;
+  }
+  
+  
+  
+  .meh {
+    position: relative;
+    color: #405461;
+    font-family: 'Muli';
+  }
+
+  /*Prevent text selection*/
+  span {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .quantityResult {
+    font-size: 17px;
+    font-weight: 600;
+  }
