@@ -1,6 +1,6 @@
 import Products from "../model/Products.js";
-import Api from "../service/api.js";
-import Validation from "../service/validation.js";
+import Api from "../services/api.js";
+import Validation from "../services/validation.js";
 const getEle = (id) => document.getElementById(id);
 const validation = new Validation();
 /**
