@@ -35,6 +35,7 @@ window.onload = async () => renderList();
 
 getEle('addPhoneForm').onclick = () => {
   helper.clearTB();
+  resetForm('formPhone');
   getEle('btnUpdate').style.display = 'none';
   getEle('btnAddPhone').style.display = 'inline-block';
 };
@@ -63,7 +64,7 @@ window.btnDelete = async (id) => {
 };
 
 window.btnEdit = async (id) => {
-  helper.clearTB();
+ 
   getEle('btnUpdate').style.display = 'inline-block';
   getEle('btnAddPhone').style.display = 'none';
 

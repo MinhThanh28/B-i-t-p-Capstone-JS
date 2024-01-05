@@ -1,16 +1,18 @@
 let getEle = (id) => document.getElementById(id);
 export class Helper {
-  inpArr = ['name', 'price', 'screen', 'backCam', 'frontCam', 'img', 'desc', 'type'];
-  tbArr = [
-    'tbname',
-    'tbprice',
-    'tbscreen',
-    'tbbackCam',
-    'tbfrontCam',
-    'tbimg',
-    'tbdesc',
-    'tbtype',
-  ];
+  constructor() {
+    this.inpArr = ['name', 'price', 'screen', 'backCam', 'frontCam', 'img', 'desc', 'type'];
+    this.tbArr = [
+      'tbname',
+      'tbprice',
+      'tbscreen',
+      'tbbackCam',
+      'tbfrontCam',
+      'tbimg',
+      'tbdesc',
+      'tbtype',
+    ];
+  }
 
   getInputValue() {
     return this.inpArr.map((ele) => getEle(ele).value);
@@ -22,9 +24,8 @@ export class Helper {
     });
   }
   clearTB() {
-    let fields = this.tbArr.map((ele) => getEle(ele));
-    fields.forEach((ele) => {
-      ele.innerHTML = '&#8205';
+    this.tbArr.forEach((id) => {
+      getEle(id).innerHTML = '';
     });
   }
 }
@@ -32,7 +33,6 @@ export class Helper {
 export class CustomModal {
   static alertSuccess = (message) => {
     return Swal.fire({
-      position: 'top-right',
       icon: 'success',
       title: message,
       showConfirmButton: false,
