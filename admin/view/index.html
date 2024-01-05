@@ -105,11 +105,40 @@
           <a class="navbar-brand" href="#">
             <i class="fa-solid fa-robot me-3"></i>Cyber Phone
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" 
-                  aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- Navbar content -->
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto nav1">
+              <li class="nav-item text-center mx-5">
+                <a class="nav-link active" href="../../index.html" role="button" aria-haspopup="true" aria-expanded="false">
+                  <div>
+                    <i class="fas fa-home fa-xl mb-1"></i>
+                  </div>
+                  Home
+                </a>
+              </li>
+  
+              <li class="nav-item text-center">
+                <a class="nav-link active" href="../../customer/view/store.html" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                <div>
+                  <i class="fa-solid fa-xl fa-store"></i>
+                </div>
+                Store
+              </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -129,17 +158,26 @@
             </button>
           </div>
         </div>
-
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Tên sản phẩm"
-          id="searchName"
-        />
-        <!-- thêm một nút để sắp xếp sản phẩm theo giá có icon từ front awsome phù hợp -->
-        <button id="sortByPrice" type="button" class="btn btn-primary">
-          <i class="fas fa-sort-amount-up"></i> Sort by Price
-        </button>
+        <div class="container py-5" id="content-wrap">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Input for searching by name -->
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tên sản phẩm"
+                id="searchName"
+              />
+            </div>
+            <div class="col-md-6">
+              <!-- Button for sorting by price -->
+              <button id="sortByPrice" type="button" class="btn btn-primary">
+                <i class="fas fa-sort-amount-up"></i> Sort by Price
+              </button>
+            </div>
+          </div>
+          <!-- Other content goes here -->
+        </div>
         <div class="table-responsive">
           <table class="table display" id="myTable">
             <thead class="">
@@ -179,7 +217,7 @@
                           ><i class="fa-solid fa-mobile-screen-button"></i
                         ></span>
                       </div>
-                      <!-- <input
+                      <input
                         type="text"
                         name="name"
                         id="name"
@@ -187,28 +225,7 @@
                         placeholder="Phone name"
                       />
                     </div>
-                    <span class="sp-thongbao" id="tbname"></span> -->
-                    <div class="container py-5" id="content-wrap">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <!-- Input for searching by name -->
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Tên sản phẩm"
-                            id="searchName"
-                          />
-                        </div>
-                        <div class="col-md-6">
-                          <!-- Button for sorting by price -->
-                          <button id="sortByPrice" type="button" class="btn btn-primary">
-                            <i class="fas fa-sort-amount-up"></i> Sort by Price
-                          </button>
-                        </div>
-                      </div>
-                      <!-- Other content goes here -->
-                    </div>
-                    
+                    <span class="sp-thongbao" id="tbname"></span>
                   </div>
                   <div class="form-group">
                     <div class="input-group">
